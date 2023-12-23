@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Flip Clock</title>
+        <link rel="stylesheet" href="css/flipclock.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: #222;
+            }
+            .clock{
+                width: auto;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div class="clock"></div>
+        
+        
+        <script src="js/jquery-1.12.1.min.js"></script>
+        <script src="js/flipclock.js"></script>
+        <script type="text/javascript">
+            var clock = $('.clock').FlipClock({
+                clockFace: 'TwelveHourClock'
+            });
+        </script>
+    </body>
+</html>
